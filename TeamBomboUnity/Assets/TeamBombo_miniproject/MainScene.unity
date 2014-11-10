@@ -244,7 +244,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -342,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 241465575}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
   m_LocalPosition: {x: -0, y: 0, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .699999988, y: .699999988, z: .699999988}
   m_Children:
   - {fileID: 1070393210}
   - {fileID: 1818987263}
@@ -822,7 +822,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 461df0064f42947eeb4f87c726ddf955, type: 2}
   m_PrefabInternal: {fileID: 2058606485}
   m_GameObject: {fileID: 1091795674}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
+  m_LocalRotation: {x: 0, y: .707106888, z: 0, w: .707106769}
   m_LocalPosition: {x: -25, y: 0, z: 14.2700005}
   m_LocalScale: {x: 80.9268112, y: 25, z: 1}
   m_Children: []
@@ -894,7 +894,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400010, guid: 461df0064f42947eeb4f87c726ddf955, type: 2}
   m_PrefabInternal: {fileID: 2058606485}
   m_GameObject: {fileID: 1204410424}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
+  m_LocalRotation: {x: 0, y: .707106888, z: 0, w: .707106769}
   m_LocalPosition: {x: 25, y: 0, z: 13.7309999}
   m_LocalScale: {x: 80.3368988, y: 25, z: 1}
   m_Children: []
@@ -1419,6 +1419,7 @@ GameObject:
   - 124: {fileID: 1753954076}
   - 114: {fileID: 1753954075}
   - 81: {fileID: 1753954074}
+  - 45: {fileID: 1753954080}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1509,11 +1510,19 @@ Transform:
   m_PrefabInternal: {fileID: 199759708}
   m_GameObject: {fileID: 1753954073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 588423076}
   m_RootOrder: 1
+--- !u!45 &1753954080
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753954073}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
 --- !u!1 &1799041192
 GameObject:
   m_ObjectHideFlags: 0
