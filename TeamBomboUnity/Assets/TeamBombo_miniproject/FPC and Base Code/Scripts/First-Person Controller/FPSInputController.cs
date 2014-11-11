@@ -22,10 +22,12 @@ public class FPSInputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Get the input vector from kayboard or analog stick
+		Vector3 XRotation = Vector3.zero;
+
+		// Get the input vector from kayboard or analog stick
         Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-        if (directionVector != Vector3.zero)
+		if (directionVector != Vector3.zero)
         {
             // Get the length of the directon vector and then normalize it
             // Dividing by the length is cheaper than normalizing when we already have the length anyway
@@ -42,6 +44,10 @@ public class FPSInputController : MonoBehaviour
             // Multiply the normalized direction vector by the modified length
             directionVector = directionVector * directionLength;
         }
+
+		XRotation.y = (((directionVector.x + 1f) * 5f) - 5f);
+		Debug.Log (XRotation.y);
+		transform.Rotate (XRotation);
 
         // Apply the direction to the CharacterMotor
         motor.inputMoveDirection = transform.rotation * directionVector;

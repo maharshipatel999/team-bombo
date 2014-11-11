@@ -250,6 +250,26 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
+      propertyPath: jumping.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
+      propertyPath: axes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
+      propertyPath: axes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
+      propertyPath: movingPlatform.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
+      propertyPath: sliding.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40ce15be3c10348528f36f252bcbc72c, type: 2}
   m_RootGameObject: {fileID: 588423075}
@@ -606,16 +626,16 @@ MonoBehaviour:
     gravity: 9.81000042
     maxFallSpeed: 20
   jumping:
-    enabled: 1
+    enabled: 0
     baseHeight: 1
     extraHeight: 4.0999999
     perpAmount: 0
     steepPerpAmount: .5
   movingPlatform:
-    enabled: 1
+    enabled: 0
     movementTransfer: 2
   sliding:
-    enabled: 1
+    enabled: 0
     slidingSpeed: 15
     sidewaysControl: 1
     speedControl: .400000006
@@ -1447,7 +1467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 2
+  axes: 0
   sensitivityX: 10
   sensitivityY: 10
   minimumX: 0
