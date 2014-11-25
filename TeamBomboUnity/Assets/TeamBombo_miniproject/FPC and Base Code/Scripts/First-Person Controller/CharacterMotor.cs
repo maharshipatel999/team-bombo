@@ -16,7 +16,7 @@ public class CharacterMotor : MonoBehaviour
     bool canControl = true;
     bool useFixedUpdate = true;
 
-    // For the next variables, [System.NonSerialized] tells Unity to not serialize the variable or show it in the inspector view.
+    // For the next variables, [Sys1tem.NonSerialized] tells Unity to not serialize the variable or show it in the inspector view.
     // Very handy for organization!
 
     // The current global direction we want the character to move in.
@@ -210,6 +210,7 @@ public class CharacterMotor : MonoBehaviour
 
         // Update velocity based on input
         velocity = ApplyInputVelocityChange(velocity);
+		// Debug.Log (velocity.magnitude);
 
         // Apply gravity and jumping force
         velocity = ApplyGravityAndJumping(velocity);
