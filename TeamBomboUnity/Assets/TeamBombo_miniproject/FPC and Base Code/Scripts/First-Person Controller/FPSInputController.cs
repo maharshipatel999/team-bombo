@@ -22,7 +22,7 @@ public class FPSInputController : MonoBehaviour
     void Awake()
     {
         motor = GetComponent<CharacterMotor>();
-		Acceleration = 0.2f;
+		Acceleration = 0.08f;
 		SlowDown = 0.01f;
     }
 
@@ -68,7 +68,7 @@ public class FPSInputController : MonoBehaviour
 
 		// Apply the direction to the CharacterMotor
         motor.inputMoveDirection = transform.rotation * directionVector;
-		Debug.Log (directionVector);
+	
 		initialZ = directionVector.z;
         //motor.inputJump = Input.GetButton("Jump");
     }
