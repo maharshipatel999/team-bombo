@@ -10,7 +10,6 @@ public class Intersection : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Route = RouteObject.GetComponent("Transform") as RectTransform;
 		RouteSource = RouteObject.GetComponent("AudioSource") as AudioSource;
 		RouteNumber = 0;
 	}

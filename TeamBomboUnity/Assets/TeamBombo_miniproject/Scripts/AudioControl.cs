@@ -17,7 +17,7 @@ public class AudioControl : MonoBehaviour {
 		    && (FPSInputController.instance.motor.movement.velocity.magnitude > 5)) {
 			audio.clip = HeadTurn;
 			if (!audio.isPlaying) audio.Play();	
-			Debug.Log("Look Ahead Dumbass!");
+			Debug.Log("Look Ahead!");
 		}
 	}
 }
