@@ -12,16 +12,17 @@ using System.Collections.Generic;
 
 public class FPSInputController : MonoBehaviour
 {
-    private CharacterMotor motor;
+    public CharacterMotor motor;
+	public static FPSInputController instance;
 	Vector3 directionVector;
 	float initialZ = 0f;
 	public float Acceleration, SlowDown;
 
-
     // Use this for initialization
     void Awake()
     {
-        motor = GetComponent<CharacterMotor>();
+		instance = this;
+		motor = GetComponent<CharacterMotor>();
 		Acceleration = 0.08f;
 		SlowDown = 0.01f;
     }

@@ -12,7 +12,8 @@ using System.Collections.Generic;
 
 public class CharacterMotor : MonoBehaviour
 {
-    // Does this script currently respond to input?
+
+	// Does this script currently respond to input?
     bool canControl = true;
     bool useFixedUpdate = true;
 
