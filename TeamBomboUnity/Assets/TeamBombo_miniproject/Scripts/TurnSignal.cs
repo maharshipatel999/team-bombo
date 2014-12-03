@@ -17,6 +17,7 @@ public class TurnSignal : MonoBehaviour {
 	IEnumerator OnTriggerEnter(Collider col){
 		if (col.gameObject.name == "First Person Controller") {
 			audio.clip = TurnTrack;
+			audio.volume = 1.0f;
 			Intersection.instance.audio.mute = true;
 			audio.Play ();
 			yield return new WaitForSeconds(audio.clip.length);

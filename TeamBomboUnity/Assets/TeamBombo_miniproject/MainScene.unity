@@ -824,6 +824,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 503022561}
   - 82: {fileID: 503022560}
+  - 114: {fileID: 503022562}
   m_Layer: 0
   m_Name: PotHoleSource
   m_TagString: Untagged
@@ -841,7 +842,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 91aae2b857585cb469858f41c084ad06, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .25
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -901,6 +902,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!114 &503022562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503022559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e66b85d3780bfd47bfdd2a6c431a913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &588423075
 GameObject:
   m_ObjectHideFlags: 0

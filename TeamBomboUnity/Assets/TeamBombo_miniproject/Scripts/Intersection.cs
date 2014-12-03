@@ -26,6 +26,7 @@ public class Intersection : MonoBehaviour {
 			if ((transform.position.z < -55) && (transform.position.z > -85) && 
 				(transform.position.x > 35) && (transform.position.x < 115) && (Input.GetButton ("Fire1"))) {
 
+				RouteSource.volume = 0.5f;
 				RouteSource.clip = RouteClip [RouteNumber];
 				Debug.Log ("Route Sonification");
 				RouteSource.Play ();
