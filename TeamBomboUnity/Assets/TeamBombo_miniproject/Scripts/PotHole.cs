@@ -13,9 +13,14 @@ public class PotHole : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(Collider col){
+	IEnumerator OnTriggerEnter(Collider col){
 		if (col.gameObject.name == "First Person Controller") {
+			Intersection.instance.audio.mute = true;
+			Debug.Log ("Pothole Ahead!");
 			audio.Play ();
+			yield return new WaitForSeconds(audio.clip.length);
+			Intersection.instance.audio.mute = false;
+
 		}
 	}
 }

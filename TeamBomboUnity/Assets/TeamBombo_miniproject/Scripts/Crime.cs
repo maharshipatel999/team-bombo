@@ -5,7 +5,7 @@ public class Crime : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -13,10 +13,14 @@ public class Crime : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter(Collider col){
+	IEnumerator OnTriggerEnter(Collider col){
 		if ((col.gameObject.name == "First Person Controller") && (FPSInputController.instance.motor.movement.velocity.magnitude < 15f)){
-			audio.Play ();
 			Debug.Log ("High Crime Area!");
+			Intersection.instance.audio.mute = true;
+			audio.Play ();
+			yield return new WaitForSeconds(audio.clip.length);
+			Intersection.instance.audio.mute = false;
+	
 		}
 	}
 }

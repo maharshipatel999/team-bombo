@@ -60,7 +60,7 @@ public class FPSInputController : MonoBehaviour
 		*/
 
 		// Rotate Handle Axially 
-		XRotation.y = (((Input.GetAxis("Horizontal") + 1f) * 5f) - 5f);
+		XRotation.y = (((Input.GetAxis("Horizontal") + 1f) * 2f) - 2f);
 		transform.Rotate (XRotation);
 
 

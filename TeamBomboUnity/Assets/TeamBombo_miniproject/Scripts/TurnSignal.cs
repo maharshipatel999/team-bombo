@@ -14,10 +14,14 @@ public class TurnSignal : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(Collider col){
+	IEnumerator OnTriggerEnter(Collider col){
 		if (col.gameObject.name == "First Person Controller") {
 			audio.clip = TurnTrack;
+			Intersection.instance.audio.mute = true;
 			audio.Play ();
+			yield return new WaitForSeconds(audio.clip.length);
+			Intersection.instance.audio.mute = false;
+
 		}
 	}
 }

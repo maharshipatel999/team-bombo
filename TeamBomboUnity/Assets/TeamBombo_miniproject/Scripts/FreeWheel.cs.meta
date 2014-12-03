@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 560ab6d137038d84488959a3cba8074f
+guid: 8c994eeeabb0ed34d8a23dd04994a319
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - Startup: {fileID: 8300000, guid: 5220bbfb5d2f741a186d28fa624c2173, type: 3}
-  - HeadTurn: {fileID: 8300000, guid: 2bf135b96ba1e7346854db10231c2f4b, type: 3}
+  - BikeWheel: {fileID: 8300000, guid: 29c5119daac804242b23346158af3948, type: 3}
   - Bell: {fileID: 8300000, guid: 5bb2bc98d9e185443b7d678f6d36bad1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
