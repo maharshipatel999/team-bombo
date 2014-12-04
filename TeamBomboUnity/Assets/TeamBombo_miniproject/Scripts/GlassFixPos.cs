@@ -4,7 +4,7 @@ using System.Collections;
 public class GlassFixPos : MonoBehaviour {
 
 	public RectTransform glassCanvas, panelTransform;
-	public GameObject TextObject, TimeObject, AlertObject;
+	public GameObject TextObject, TimeObject, AlertObject, CrimeObject;
 	RectTransform TextTransform, TimeTransform, AlertTransform;
 	UnityEngine.UI.Text TimeField, TextField, AlertField;
 	float DistanceTravelled;
@@ -42,9 +42,13 @@ public class GlassFixPos : MonoBehaviour {
 						&& (Intersection.instance.transform.position.z > -40f) && (Intersection.instance.transform.position.z < 100f)) {
 						AlertField.text = "High Crime Area!";		
 			Debug.Log ("High Crime Area!");
+			if (!CrimeObject.audio.isPlaying)
+				CrimeObject.audio.Play ();
+			// Debug.Log (CrimeObject.audio.isPlaying);
 			
 				} else {
-			AlertField.text = "";		
+			AlertField.text = "";	
+			CrimeObject.audio.Stop ();
 		}
 
 	}
