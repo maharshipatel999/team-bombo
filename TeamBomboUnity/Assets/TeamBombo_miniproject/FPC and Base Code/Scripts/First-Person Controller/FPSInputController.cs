@@ -15,7 +15,7 @@ public class FPSInputController : MonoBehaviour
     public CharacterMotor motor;
 	public static FPSInputController instance;
 	Vector3 directionVector;
-	float initialZ = 0f;
+	public float initialZ = 0f;
 	public float Acceleration, SlowDown;
 
     // Use this for initialization

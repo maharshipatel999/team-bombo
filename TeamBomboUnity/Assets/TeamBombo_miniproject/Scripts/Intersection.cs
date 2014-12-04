@@ -23,8 +23,7 @@ public class Intersection : MonoBehaviour {
 	// Update is called once per frame
 	IEnumerator RouteSonification () {
 		while (true) {
-			if ((transform.position.z < -55) && (transform.position.z > -85) && 
-				(transform.position.x > 35) && (transform.position.x < 115) && (Input.GetButton ("Fire1"))) {
+			if (Input.GetButton ("Fire1")) {
 
 				RouteSource.volume = 0.5f;
 				RouteSource.clip = RouteClip [RouteNumber];
